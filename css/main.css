@@ -29,7 +29,7 @@
   justify-content: space-between;
   padding: 12px 64px;
   position: relative;
-  box-shadow: -10px -10px 200px rgb(104, 78, 45);
+  box-shadow: -10px -10px 200px rgb(79, 71, 62);
 }
 .header .navigation .logo-container {
   display: flex;
@@ -47,7 +47,7 @@
 }
 .header .navigation .navigation-list .navigation-list__item .navigation-list__item--link {
   text-decoration: none;
-  color: rgb(104, 78, 45);
+  color: rgb(79, 71, 62);
   font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
 }
 .header .navigation .navigation-list .navigation-list__item .navigation-list__item--link:hover {
@@ -62,7 +62,7 @@
   height: 4px;
   margin: 6px 0px;
   border-radius: 4px;
-  background-color: rgb(104, 78, 45);
+  background-color: rgb(79, 71, 62);
 }
 @media (max-width: 720px) {
   .header .navigation .navigation-hamburger {
@@ -113,7 +113,7 @@
 }
 .about-us .about-us__left .about-us__left--title {
   font: bold calc(0.9em + 1vw) "Noto Sans JP", sans-serif;
-  color: rgb(104, 78, 45);
+  color: rgb(79, 71, 62);
   padding: 8px 0px 16px 0px;
 }
 .about-us .about-us__left .about-us__left--img {
@@ -130,4 +130,48 @@
   font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
   line-height: 1.6em;
   color: rgb(50, 50, 50);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(79, 71, 62);
+  box-shadow: -10px -10px 80px rgba(48, 24, 0, 0.132);
+  padding: 12px 64px;
+}
+.footer .footer__navigation {
+  display: flex;
+}
+.footer .footer__navigation .footer__navigation--logo {
+  display: flex;
+  width: 82px;
+  height: 82px;
+  background-color: rgb(253, 219, 176);
+  border-radius: 6px;
+  padding: 12px;
+}
+.footer .footer__navigation .footer__navigation-list {
+  padding: 4px 48px;
+}
+.footer .footer__navigation .footer__navigation-list .navigation-list__item {
+  padding: 2px;
+}
+.footer .footer__navigation .footer__navigation-list .navigation-list__item .navigation-list__item--link {
+  text-decoration: none;
+  color: rgb(215, 215, 215);
+  font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+}
+.footer .footer__navigation .footer__navigation-list .navigation-list__item .navigation-list__item--link:hover {
+  border-bottom: 0.5px solid;
+}
+.footer .footer__portfolio {
+  display: flex;
+}
+.footer .footer__portfolio .footer__portfolio--img {
+  display: flex;
+  margin: 24px 12px 0px 12px;
+  width: calc(100% - 4vh);
 }

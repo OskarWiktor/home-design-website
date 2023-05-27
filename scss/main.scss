@@ -79,6 +79,8 @@
     }
   }
 }
+
+// About us section
 .about-us {
   display: flex;
   flex-direction: row;
@@ -112,6 +114,51 @@
       font: $text-normal;
       line-height: 1.6em;
       color: rgb(50, 50, 50);
+    }
+  }
+}
+
+//footer
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: $secondary-color;
+  box-shadow: -10px -10px 80px rgba(48, 24, 0, 0.132);
+  padding: 12px 64px;
+  .footer__navigation {
+    display: flex;
+    .footer__navigation--logo {
+      display: flex;
+      width: 82px;
+      height: 82px;
+      background-color: $primary-color;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .footer__navigation-list {
+      padding: 4px 48px;
+      .navigation-list__item {
+        padding: 2px;
+        .navigation-list__item--link {
+          text-decoration: none;
+          color: rgb(215, 215, 215);
+          font: $text-big;
+        }
+        .navigation-list__item--link:hover {
+          border-bottom: 0.5px solid;
+        }
+      }
+    }
+  }
+  .footer__portfolio {
+    display: flex;
+    .footer__portfolio--img {
+      display: flex;
+      margin: 24px 12px 0px 12px;
+      width: calc(100% - 4vh);
     }
   }
 }
