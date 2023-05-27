@@ -75,7 +75,43 @@
     display: flex;
     min-height: 360px;
     .hero-baner__container--image {
-        object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}
+.about-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 82px auto;
+  justify-content: space-between;
+  .about-us__left {
+    margin: auto;
+    .about-us__left--text {
+      font: $text-big;
+      color: rgb(191, 191, 191);
+      text-transform: uppercase;
+    }
+    .about-us__left--title {
+      font: $main-heading;
+      color: $secondary-color;
+      padding: 8px 0px 16px 0px;
+    }
+    .about-us__left--img {
+      width: 320px;
+      height: 460px;
+      border-radius: 12px;
+    }
+  }
+  .about-us__right {
+    margin: 64px auto;
+    padding: 0px 24px;
+    .about-us__right--text {
+      max-width: 320px;
+      font: $text-normal;
+      line-height: 1.6em;
+      color: rgb(50, 50, 50);
     }
   }
 }
