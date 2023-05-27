@@ -87,3 +87,10 @@
     border-bottom: 1px solid rgb(253, 219, 176);
   }
 }
+.header .hero-baner__container {
+  display: flex;
+  min-height: 360px;
+}
+.header .hero-baner__container .hero-baner__container--image {
+  object-fit: cover;
+}
