@@ -105,6 +105,7 @@
 }
 .about-us .about-us__left {
   margin: auto;
+  padding: 0px 16px;
 }
 .about-us .about-us__left .about-us__left--text {
   font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
@@ -122,8 +123,8 @@
   border-radius: 12px;
 }
 .about-us .about-us__right {
-  margin: 64px auto;
-  padding: 0px 24px;
+  margin: auto;
+  padding: 16px;
 }
 .about-us .about-us__right .about-us__right--text {
   max-width: 320px;
@@ -133,19 +134,28 @@
 }
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   background-color: rgb(79, 71, 62);
   box-shadow: -10px -10px 80px rgba(48, 24, 0, 0.132);
   padding: 12px 64px;
 }
-.footer .footer__navigation {
+.footer .footer--wraper {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+@media (max-width: 900px) {
+  .footer .footer--wraper {
+    justify-content: center;
+  }
+}
+.footer .footer--wraper .footer__navigation {
   display: flex;
 }
-.footer .footer__navigation .footer__navigation--logo {
+.footer .footer--wraper .footer__navigation .footer__navigation--logo {
   display: flex;
   width: 82px;
   height: 82px;
@@ -153,25 +163,28 @@
   border-radius: 6px;
   padding: 12px;
 }
-.footer .footer__navigation .footer__navigation-list {
+.footer .footer--wraper .footer__navigation .footer__navigation-list {
   padding: 4px 48px;
 }
-.footer .footer__navigation .footer__navigation-list .navigation-list__item {
+.footer .footer--wraper .footer__navigation .footer__navigation-list .navigation-list__item {
   padding: 2px;
 }
-.footer .footer__navigation .footer__navigation-list .navigation-list__item .navigation-list__item--link {
+.footer .footer--wraper .footer__navigation .footer__navigation-list .navigation-list__item .navigation-list__item--link {
   text-decoration: none;
   color: rgb(215, 215, 215);
   font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
 }
-.footer .footer__navigation .footer__navigation-list .navigation-list__item .navigation-list__item--link:hover {
+.footer .footer--wraper .footer__navigation .footer__navigation-list .navigation-list__item .navigation-list__item--link:hover {
   border-bottom: 0.5px solid;
 }
-.footer .footer__portfolio {
+.footer .footer--wraper .footer__portfolio {
   display: flex;
 }
-.footer .footer__portfolio .footer__portfolio--img {
+.footer .footer--wraper .footer__portfolio .footer__portfolio--img {
   display: flex;
-  margin: 24px 12px 0px 12px;
+  margin: 24px 0px 0px 12px;
   width: calc(100% - 4vh);
+}
+.footer .footer--wraper .footer__portfolio .footer__portfolio--img:first-of-type {
+  margin: 24px 0px 0px 0px;
 }
