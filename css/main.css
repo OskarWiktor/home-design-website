@@ -96,48 +96,82 @@
 }
 
 .about-us {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 800px;
+  width: 100%;
   margin: 82px auto;
+  padding: 12px 32px;
+}
+.about-us .about-us--wraper {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-.about-us .about-us__left {
   margin: auto;
-  padding: 0px 16px;
 }
-.about-us .about-us__left .about-us__left--text {
+@media (max-width: 900px) {
+  .about-us .about-us--wraper {
+    justify-content: center;
+  }
+}
+.about-us .about-us--wraper .about-us__left {
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .about-us .about-us--wraper .about-us__left {
+    width: 100%;
+  }
+}
+.about-us .about-us--wraper .about-us__left .about-us__left--text {
   font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
   color: rgb(191, 191, 191);
   text-transform: uppercase;
 }
-.about-us .about-us__left .about-us__left--title {
+@media (max-width: 900px) {
+  .about-us .about-us--wraper .about-us__left .about-us__left--text {
+    text-align: center;
+  }
+}
+.about-us .about-us--wraper .about-us__left .about-us__left--title {
   font: bold calc(0.9em + 1vw) "Noto Sans JP", sans-serif;
   color: rgb(79, 71, 62);
-  padding: 8px 0px 16px 0px;
+  padding: 8px 0px 24px 0px;
 }
-.about-us .about-us__left .about-us__left--img {
-  width: 320px;
-  height: 460px;
-  border-radius: 12px;
+@media (max-width: 900px) {
+  .about-us .about-us--wraper .about-us__left .about-us__left--title {
+    text-align: center;
+  }
 }
-.about-us .about-us__right {
-  margin: auto;
-  padding: 16px;
+.about-us .about-us--wraper .about-us__left .about-us__left--img {
+  width: 480px;
+  height: auto;
+  padding-right: 24px;
 }
-.about-us .about-us__right .about-us__right--text {
-  max-width: 320px;
+@media (max-width: 900px) {
+  .about-us .about-us--wraper .about-us__left .about-us__left--img {
+    margin: auto;
+    padding: 0px;
+  }
+}
+.about-us .about-us--wraper .about-us__right {
+  margin: auto 0px;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .about-us .about-us--wraper .about-us__right {
+    width: 100%;
+  }
+}
+.about-us .about-us--wraper .about-us__right .about-us__right--text {
   font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
   line-height: 1.6em;
-  color: rgb(50, 50, 50);
+  color: rgb(96, 96, 96);
+  padding-top: 24px;
 }
 
 .footer {
   width: 100%;
   background-color: rgb(79, 71, 62);
   box-shadow: -10px -10px 80px rgba(48, 24, 0, 0.132);
-  padding: 12px 64px;
+  padding: 12px 32px;
 }
 .footer .footer--wraper {
   max-width: 1100px;
@@ -179,6 +213,7 @@
 }
 .footer .footer--wraper .footer__portfolio {
   display: flex;
+  align-items: center;
 }
 .footer .footer--wraper .footer__portfolio .footer__portfolio--img {
   display: flex;
