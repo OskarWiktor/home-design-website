@@ -232,7 +232,7 @@
   float: right;
   background-color: rgb(253, 219, 176);
   border: none;
-  padding: 12px 24px;
+  padding: 12px 32px;
   margin: 24px 0px 0px auto;
   border-radius: 8px;
 }
@@ -244,6 +244,74 @@
 .small-portfolio .small-portfolio--button:hover {
   transition: 0.2s ease-in-out;
   background-color: rgba(225, 183, 142, 0.91);
+}
+
+.services {
+  width: 100%;
+  margin: 82px auto;
+  padding: 0px 32px;
+}
+.services .services--wraper {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 32px 0px;
+}
+.services .services--wraper .services__text--container .services__text {
+  color: rgb(191, 191, 191);
+  font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .services .services--wraper .services__text--container .services__text {
+    text-align: center;
+  }
+}
+.services .services--wraper .services__text--container .services__title {
+  color: rgb(79, 71, 62);
+  font: bold calc(0.9em + 1vw) "Noto Sans JP", sans-serif;
+  padding: 8px 0px 24px 0px;
+}
+@media (max-width: 900px) {
+  .services .services--wraper .services__text--container .services__title {
+    text-align: center;
+  }
+}
+.services .services--wraper .services__offer--container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .services .services--wraper .services__offer--container {
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.services .services--wraper .services__offer--container .services__offer {
+  max-width: 320px;
+  margin: 24px 12px;
+  position: relative;
+}
+.services .services--wraper .services__offer--container .services__offer .services__offer--number {
+  font: bold calc(2.8em + 2vw) "Noto Sans JP", sans-serif;
+  color: rgba(172, 172, 172, 0.21);
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  z-index: -1;
+}
+.services .services--wraper .services__offer--container .services__offer .services__offer--title {
+  font: bold calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+  color: rgb(79, 71, 62);
+  padding-bottom: 12px;
+}
+.services .services--wraper .services__offer--container .services__offer .services__offer--text {
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  color: rgb(96, 96, 96);
+  line-height: 1.6em;
 }
 
 .footer {
@@ -273,7 +341,7 @@
   width: 82px;
   height: 82px;
   background-color: rgb(253, 219, 176);
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 12px;
 }
 .footer .footer--wraper .footer__navigation .footer__navigation-list {

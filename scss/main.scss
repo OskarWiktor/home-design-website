@@ -89,7 +89,6 @@
   width: 100%;
   margin: 82px auto;
   padding: 0px 32px;
-
   .about-us--wraper {
     max-width: 1100px;
     display: flex;
@@ -203,7 +202,7 @@
     float: right;
     background-color: $primary-color;
     border: none;
-    padding: 12px 24px;
+    padding: 12px 32px;
     margin: 24px 0px 0px auto;
     border-radius: 8px;
     .small-portfolio--button--link {
@@ -215,6 +214,70 @@
   .small-portfolio--button:hover {
     transition: 0.2s ease-in-out;
     background-color: rgba(225, 183, 142, 0.91);
+  }
+}
+//services 
+.services {
+  width: 100%;
+  margin: 82px auto;
+  padding: 0px 32px;
+  .services--wraper {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 32px 0px;
+    .services__text--container {
+      .services__text {
+        color: rgb(191, 191, 191);
+        font: $text-big;
+        text-transform: uppercase;
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+      .services__title {
+        color: $secondary-color;
+        font: $main-heading;
+        padding: 8px 0px 24px 0px;
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+    }
+    .services__offer--container {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 900px) {
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+      }
+      .services__offer {
+        max-width: 320px;
+        margin: 24px 12px;
+        position: relative;
+        .services__offer--number {
+          font: bold calc(2.8em + 2vw) 'Noto Sans JP', sans-serif;
+          color: rgba(172, 172, 172, 0.21);
+          position: absolute;
+          top: -30px;
+          left: -20px;
+          z-index: -1;
+        }
+        .services__offer--title {
+          font: $text-big--bold;
+          color: $secondary-color;
+          padding-bottom: 12px;
+        }
+        .services__offer--text {
+          font: $text-normal;
+          color: rgb(96, 96, 96);
+          line-height: 1.6em;
+        }
+      }
+    }
   }
 }
 
@@ -244,7 +307,7 @@
         width: 82px;
         height: 82px;
         background-color: $primary-color;
-        border-radius: 6px;
+        border-radius: 2px;
         padding: 12px;
       }
       .footer__navigation-list {
