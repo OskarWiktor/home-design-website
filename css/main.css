@@ -170,6 +170,12 @@
   color: rgb(96, 96, 96);
   padding-top: 24px;
 }
+@media (max-width: 900px) {
+  .about-us .about-us--wraper .about-us__right .about-us__right--text {
+    max-width: 480px;
+    margin: auto;
+  }
+}
 
 .small-portfolio {
   width: 100%;
@@ -486,6 +492,100 @@
 }
 @media (max-width: 900px) {
   .contact .contact--wraper .contact__right .contact__info--container .contact__info .contact__info--link {
+    text-align: center;
+  }
+}
+
+.testimonial {
+  width: 100%;
+  margin: 82px auto;
+  padding: 0px 32px;
+}
+.testimonial .testimonial--wraper {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper {
+    justify-content: center;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__left {
+  width: 45%;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__left {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__left .testimonial__left--img {
+    margin: auto;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__right {
+  width: 45%;
+  margin: auto 0px;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__right {
+    width: 100%;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__right .testimonial__text {
+  font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+  color: rgb(191, 191, 191);
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__right .testimonial__text {
+    text-align: center;
+    padding-top: 12px;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__right .testimonial__title {
+  font: bold calc(0.9em + 1vw) "Noto Sans JP", sans-serif;
+  color: rgb(79, 71, 62);
+  padding: 8px 0px 12px 0px;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__right .testimonial__title {
+    text-align: center;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__right .testimonial__paragraf {
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  line-height: 1.6em;
+  color: rgb(96, 96, 96);
+  padding: 12px 0px;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__right .testimonial__paragraf {
+    text-align: center;
+    max-width: 480px;
+    margin: auto;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__right .testimonial__client--name {
+  font: bold calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+  color: rgb(79, 71, 62);
+  padding-top: 12px;
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__right .testimonial__client--name {
+    text-align: center;
+  }
+}
+.testimonial .testimonial--wraper .testimonial__right .testimonial__client--job {
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+  color: rgb(96, 96, 96);
+}
+@media (max-width: 900px) {
+  .testimonial .testimonial--wraper .testimonial__right .testimonial__client--job {
     text-align: center;
   }
 }

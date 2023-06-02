@@ -63,7 +63,6 @@
             <p class="about-us__left--text">- Who Are We</p>
             <h1 class="about-us__left--title">About Us</h1>
             <img class="about-us__left--img" src="./assets/about-us.jpg" />
-            <div class="about-us__left--color"></div>
           </div>
           <div class="about-us__right">
             <p class="about-us__right--text">
@@ -193,30 +192,35 @@
             If you have any question about our process or company? Let us know
             how we can help you.
           </p>
-          <form class="contact__form" id="form" method="POST" action="send_emial.php">
-              <input
-                class="contact__form--input"
-                type="text"
-                id="name"
-                name="name"
-                value="name"
-                placeholder="Your name"
-                required
+          <form
+            class="contact__form"
+            id="form"
+            method="POST"
+            action="send_emial.php"
+          >
+            <input
+              class="contact__form--input"
+              type="text"
+              id="name"
+              name="name"
+              value="name"
+              placeholder="Your name"
+              required
             />
-              <input
-                class="contact__form--input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email"
+            <input
+              class="contact__form--input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
             />
-              <textarea
-                class="contact__form--message"
-                name="message"
-                id="message"
-                placeholder="Your message"
-              ></textarea>
-              <span class="contact__form--error" id="message-error"></span>
+            <textarea
+              class="contact__form--message"
+              name="message"
+              id="message"
+              placeholder="Your message"
+            ></textarea>
+            <span class="contact__form--error" id="message-error"></span>
             <input
               class="contact__form--submit-btn"
               type="submit"
@@ -262,6 +266,26 @@
               >
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="testimonial--wraper">
+        <div class="testimonial__left">
+          <img class="testimonial__left--img" src="./assets/testimonial.jpg" />
+        </div>
+        <div class="testimonial__right">
+          <p class="testimonial__text">- what clients says</p>
+          <h3 class="testimonial__title">Testimonial</h3>
+          <p class="testimonial__paragraf">
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            temporibus numquam! Optio quam beatae ratione fuga aspernatur
+            tempore sunt ad culpa laudantium autem, neque excepturi. Aut quidem
+            temporibus iure possimus!"
+          </p>
+          <h4 class="testimonial__client--name">Random Name</h4>
+          <p class="testimonial__client--job">CEO, Random Company</p>
         </div>
       </div>
     </section>
