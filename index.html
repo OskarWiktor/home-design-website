@@ -159,17 +159,108 @@
           <div class="services__offer">
             <p class="services__offer--number">01</p>
             <h4 class="services__offer--title">Architecture Portfolio</h4>
-            <p class="services__offer--text">Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.</p>
+            <p class="services__offer--text">
+              Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum
+              turpis nulla blandit dui.
+            </p>
           </div>
           <div class="services__offer">
             <p class="services__offer--number">02</p>
             <h4 class="services__offer--title">Planning Process</h4>
-            <p class="services__offer--text">Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.</p>
+            <p class="services__offer--text">
+              Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum
+              turpis nulla blandit dui.
+            </p>
           </div>
           <div class="services__offer">
             <p class="services__offer--number">03</p>
             <h4 class="services__offer--title">Unique Design</h4>
-            <p class="services__offer--text">Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.</p>
+            <p class="services__offer--text">
+              Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum
+              turpis nulla blandit dui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact--wraper">
+        <div class="contact__left">
+          <p class="contact__text">- Get in touch</p>
+          <h2 class="contact__title">Contact us</h2>
+          <p class="contact__text--help">
+            If you have any question about our process or company? Let us know
+            how we can help you.
+          </p>
+          <form class="contact__form" id="form" method="POST" action="send_emial.php">
+              <input
+                class="contact__form--input"
+                type="text"
+                id="name"
+                name="name"
+                value="name"
+                placeholder="Your name"
+                required
+            />
+              <input
+                class="contact__form--input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+            />
+              <textarea
+                class="contact__form--message"
+                name="message"
+                id="message"
+                placeholder="Your message"
+              ></textarea>
+              <span class="contact__form--error" id="message-error"></span>
+            <input
+              class="contact__form--submit-btn"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+        <div class="contact__right">
+          <iframe
+            class="contact__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7424.6524318627235!2d2.2988864334742294!3d48.85801225349371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sWie%C5%BCa%20Eiffla!5e0!3m2!1spl!2spl!4v1685570956774!5m2!1spl!2spl"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="contact__info--container">
+            <div class="contact__info">
+              <img
+                class="contact__info--img"
+                src="./assets/call-outline.svg"
+                alt="Phone icon"
+              />
+              <h3 class="contact__info--title">Phone:</h3>
+              <a
+                class="contact__info--link"
+                href="tel:+636673413463"
+                title="Click to call"
+                >+63 667 341 3463</a
+              >
+            </div>
+            <div class="contact__info">
+              <img
+                class="contact__info--img"
+                src="./assets/mail-outline.svg"
+                alt="Email icon"
+              />
+              <h3 class="contact__info--title">Email:</h3>
+              <a
+                class="contact__info--link"
+                href="mailto:contact@example.com"
+                title="Click to send email"
+                >contact@example.com</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -218,6 +309,6 @@
       </div>
     </footer>
 
-    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

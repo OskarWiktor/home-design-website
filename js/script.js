@@ -25,3 +25,20 @@ function slideShow() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(slideShow, 4000);
 }
+
+//input validation 
+const form = document.getElementById('form');
+const messageInput = document.getElementById('message');
+
+const messageError = document.getElementById('message-error');
+
+form.addEventListener('submit', (e) => {
+  if (messageInput.value === '') {
+    e.preventDefault();
+    messageError.textContent='Message can not be empty';
+  };
+  if (messageInput.value !== '' && messageInput.value.length <= 20) {
+    e.preventDefault();
+    messageError.textContent='Message can not have less than 20 character';
+  };
+})

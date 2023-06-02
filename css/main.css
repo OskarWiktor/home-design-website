@@ -117,7 +117,7 @@
   }
 }
 .about-us .about-us--wraper .about-us__left {
-  width: 50%;
+  width: 45%;
 }
 @media (max-width: 900px) {
   .about-us .about-us--wraper .about-us__left {
@@ -157,7 +157,7 @@
 }
 .about-us .about-us--wraper .about-us__right {
   margin: auto 0px;
-  width: 50%;
+  width: 45%;
 }
 @media (max-width: 900px) {
   .about-us .about-us--wraper .about-us__right {
@@ -229,21 +229,21 @@
 }
 .small-portfolio .small-portfolio--button {
   display: flex;
-  float: right;
-  background-color: rgb(253, 219, 176);
-  border: none;
   padding: 12px 32px;
   margin: 24px 0px 0px auto;
-  border-radius: 8px;
+  background-color: rgba(214, 214, 214, 0.115);
+  border: 0.5px solid rgb(253, 219, 176);
+  border-radius: 4px;
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  cursor: pointer;
 }
 .small-portfolio .small-portfolio--button .small-portfolio--button--link {
-  color: rgb(79, 71, 62);
-  font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+  color: rgb(253, 219, 176);
   text-decoration: none;
 }
 .small-portfolio .small-portfolio--button:hover {
   transition: 0.2s ease-in-out;
-  background-color: rgba(225, 183, 142, 0.91);
+  background-color: rgba(214, 214, 214, 0.324);
 }
 
 .services {
@@ -312,6 +312,182 @@
   font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
   color: rgb(96, 96, 96);
   line-height: 1.6em;
+}
+
+.contact {
+  width: 100%;
+  margin: 82px auto;
+  padding: 0px 32px;
+  background-color: rgb(79, 71, 62);
+}
+.contact .contact--wraper {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 32px 0px;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.contact .contact--wraper .contact__left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__left {
+    width: 100%;
+  }
+}
+.contact .contact--wraper .contact__left .contact__text {
+  color: rgba(221, 221, 221, 0.383);
+  font: calc(0.8em + 0.4vw) "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__left .contact__text {
+    text-align: center;
+  }
+}
+.contact .contact--wraper .contact__left .contact__title {
+  color: rgb(221, 221, 221);
+  font: bold calc(0.9em + 1vw) "Noto Sans JP", sans-serif;
+  padding: 8px 0px 24px 0px;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__left .contact__title {
+    text-align: center;
+  }
+}
+.contact .contact--wraper .contact__left .contact__text--help {
+  max-width: 480px;
+  color: rgba(237, 237, 237, 0.803);
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  line-height: 1.6em;
+  margin: 0px auto;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__left .contact__text--help {
+    text-align: center;
+  }
+}
+.contact .contact--wraper .contact__left .contact__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contact .contact--wraper .contact__left .contact__form .contact__form--input {
+  display: flex;
+  width: 100%;
+  max-width: 480px;
+  background-color: rgba(214, 214, 214, 0.115);
+  border: 0.5px solid rgb(253, 219, 176);
+  padding: 12px;
+  margin: 16px auto;
+  border-radius: 4px;
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  color: rgba(237, 237, 237, 0.803);
+}
+.contact .contact--wraper .contact__left .contact__form .contact__form--input:focus {
+  outline: 1px solid rgb(253, 219, 176);
+  background-color: rgba(214, 214, 214, 0.324);
+  color: rgb(253, 219, 176);
+}
+.contact .contact--wraper .contact__left .contact__form .contact__form--message {
+  display: flex;
+  width: 100%;
+  max-width: 480px;
+  resize: vertical;
+  background-color: rgba(214, 214, 214, 0.115);
+  border: 0.5px solid rgb(253, 219, 176);
+  padding: 12px;
+  margin: 16px auto;
+  border-radius: 4px;
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  color: rgba(237, 237, 237, 0.803);
+  height: 100px;
+}
+.contact .contact--wraper .contact__left .contact__form .contact__form--message:focus {
+  outline: 1px solid rgb(253, 219, 176);
+  background-color: rgba(214, 214, 214, 0.324);
+  color: rgb(253, 219, 176);
+}
+.contact .contact--wraper .contact__left .contact__form .contact__form--error {
+  font: calc(0.8em + 0.1vw) "Noto Sans JP", sans-serif;
+  color: rgb(255, 92, 92);
+  margin: auto;
+}
+.contact .contact--wraper .contact__left .contact__form--submit-btn {
+  max-width: 480px;
+  background-color: rgba(214, 214, 214, 0.115);
+  border: 0.5px solid rgb(253, 219, 176);
+  padding: 12px 32px;
+  margin: 16px auto;
+  border-radius: 4px;
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  color: rgb(253, 219, 176);
+  cursor: pointer;
+}
+.contact .contact--wraper .contact__left .contact__form--submit-btn:hover {
+  background-color: rgba(214, 214, 214, 0.324);
+}
+.contact .contact--wraper .contact__right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__right {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+  }
+}
+.contact .contact--wraper .contact__right .contact__map {
+  height: 480px;
+}
+.contact .contact--wraper .contact__right .contact__info--container {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact--wraper .contact__right .contact__info--container .contact__info {
+  display: flex;
+  align-items: center;
+  margin: 12px auto 0px auto;
+}
+.contact .contact--wraper .contact__right .contact__info--container .contact__info .contact__info--img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.contact .contact--wraper .contact__right .contact__info--container .contact__info .contact__info--title {
+  color: rgba(237, 237, 237, 0.803);
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  line-height: 1.6em;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__right .contact__info--container .contact__info .contact__info--title {
+    text-align: center;
+  }
+}
+.contact .contact--wraper .contact__right .contact__info--container .contact__info .contact__info--link {
+  text-decoration: none;
+  color: rgb(253, 219, 176);
+  font: calc(0.8em + 0.2vw) "Noto Sans JP", sans-serif;
+  line-height: 1.6em;
+  padding-left: 12px;
+}
+@media (max-width: 900px) {
+  .contact .contact--wraper .contact__right .contact__info--container .contact__info .contact__info--link {
+    text-align: center;
+  }
 }
 
 .footer {
