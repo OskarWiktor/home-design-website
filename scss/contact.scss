@@ -44,8 +44,8 @@
         color: $secondary-color;
         padding: $title-padding;
         @media (max-width: 900px) {
-            text-align: center;
-          }
+          text-align: center;
+        }
       }
       .subscribe__paragraph {
         font: $text-normal;
@@ -58,36 +58,36 @@
       }
       .subscribe__form {
         .subscribe__form--input {
-            width: 100%;
-            max-width: 480px;
-            background-color: $input-button-color--dark;
-            border: 0.5px solid $secondary-color;
-            padding: 12px;
-            margin: 16px auto;
-            border-radius: 4px;
-            font: $text-normal;
-            color: $text-color--almost-black;
-          }
-          .subscribe__form--input:focus {
-            outline: 1px solid $secondary-color;
-            background-color: $input-button-color--light;
-            color: $secondary-color;
-          }
-          .subscribe__form--button {
-            width: 100%;
-            max-width: 480px;
-            background-color: $input-button-color--dark;
-            border: 0.5px solid $secondary-color;
-            padding: 12px;
-            border-radius: 4px;
-            margin: 16px auto;
-            font: $text-normal;
-            color: $text-color--almost-black;
-            cursor: pointer;
-          }
-          .subscribe__form--button:hover {
-            background-color: $input-button-color--light;
-          }
+          width: 100%;
+          max-width: 480px;
+          background-color: $input-button-color--dark;
+          border: 0.5px solid $secondary-color;
+          padding: 12px;
+          margin: 16px auto;
+          border-radius: 4px;
+          font: $text-normal;
+          color: $text-color--almost-black;
+        }
+        .subscribe__form--input:focus {
+          outline: 1px solid $secondary-color;
+          background-color: $input-button-color--light;
+          color: $secondary-color;
+        }
+        .subscribe__form--button {
+          width: 100%;
+          max-width: 480px;
+          background-color: $input-button-color--dark;
+          border: 0.5px solid $secondary-color;
+          padding: 12px;
+          border-radius: 4px;
+          margin: 16px auto;
+          font: $text-normal;
+          color: $text-color--almost-black;
+          cursor: pointer;
+        }
+        .subscribe__form--button:hover {
+          background-color: $input-button-color--light;
+        }
       }
     }
   }
@@ -241,6 +241,68 @@
               text-align: center;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.partners {
+  margin: $component-margin;
+  padding: $component-padding;
+  .partners--wraper {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: $wraper-light-padding;
+    .partners__text--container {
+      .partners__text {
+        color: $text-color--light;
+        font: $text-big;
+        text-transform: uppercase;
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+      .partners__title {
+        color: $secondary-color;
+        font: $main-heading;
+        padding: $title-padding;
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+    }
+    .partners__companies--container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @media (max-width: 900px) {
+        max-width: 240px;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+      }
+      .partners__company {
+        max-width: 240px;
+        margin: 24px 12px;
+        .partners__company--logo {
+          max-height: 120px;
+          width: auto;
+        }
+        .partners__company--name {
+          font: $text-big--bold;
+          color: $secondary-color;
+          padding: 12px 0px;
+          text-align: center;
+        }
+        .partners__company--slogan {
+          font: $text-normal;
+          color: $text-color--almost-black;
+          line-height: 1.6em;
+          text-align: center;
         }
       }
     }

@@ -429,7 +429,7 @@
 @media (max-width: 900px) {
   .testimonial .testimonial--wraper .testimonial__right .testimonial__text {
     text-align: center;
-    padding-top: 12px;
+    padding-top: 24px;
   }
 }
 .testimonial .testimonial--wraper .testimonial__right .testimonial__title {
