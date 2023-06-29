@@ -4,7 +4,7 @@ const modalImg = document.getElementById("img01");
 
 for (let i = 0; i < images.length; i++) {
   let img = images[i];
-  img.onclick = function(evt) {
+  img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
   }
